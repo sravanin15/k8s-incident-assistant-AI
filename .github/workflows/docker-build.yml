@@ -36,5 +36,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: asia-northeast1-docker.pkg.dev/project-69e911b5-b97a-4392-a32/k8s-incident-assistant:latest
+          tags: asia-northeast1-docker.pkg.dev/project-69e911b5-b97a-4392-a32/k8s-incident-assistant/k8s-incident-assistant:latest
           
