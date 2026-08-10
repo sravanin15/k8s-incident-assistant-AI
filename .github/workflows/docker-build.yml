@@ -19,6 +19,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v3
+        with:
+          workload_identity_provider: projects/168465937100/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions
+          service_account: github-actions@project-69e911b5-b97a-4392-a32.iam.gserviceaccount.com
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
